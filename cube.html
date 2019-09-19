@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style>
+#winwin {
+position: absolute;
+z-index: 1;
+}
+</style>
+
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute  vec4 vPosition;
+attribute  vec4 vColor;
+varying vec4 fColor;
+
+uniform mat4 modelViewMatrix;
+uniform mat4 projectionMatrix;
+
+void main()
+{
+    fColor = vColor;
+    gl_Position = projectionMatrix * modelViewMatrix * vPosition;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+precision mediump float;
+
+uniform float i;
+
+varying vec4 fColor;
+
+void
+main()
+{
+	if(i==0.0) gl_FragColor = fColor;
+	else gl_FragColor = vec4(i, 0.0, 0.0, 1.0);
+}
+</script>
+
+<script type="text/javascript" src="webgl-utils.js"></script>
+<script type="text/javascript" src="initShaders.js"></script>
+<script type="text/javascript" src="MV.js"></script>
+<script type="text/javascript" src="cube.js"></script>
+
+<body oncontextmenu="return false;">
+<h1 id="winwin">SOLVED!</h1>
+
+<canvas id="gl-canvas" width="512"" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+
+<h1>Left click & drag to rotate a pane.<br>Right click & drag to rotate entire cube.</h1>
+
+
+
+Speed: <input type="range" min="1" max="18" value="9" id="myRange"> 
+<input type="text" id="scramNum" value="5" size="1">
+<button id= "scram">Scramble</button>
+
+<br>
+
+Current state: <input type="text" id="currentState">
+<button id= "load">Load</button>
+
+
+
+
+
+
+</body>
+</html>
