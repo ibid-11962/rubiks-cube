@@ -12,11 +12,11 @@ This program is designed to be run on Google Chrome, though it may be compatible
 
 1. Make sure that the following five files are in the same directory
 
-cube.html
-cube.js
-MV.js
-initShaders.js
-webgl-utils.js
+- cube.html
+- cube.js
+- MV.js
+- initShaders.js
+- webgl-utils.js
 
 2. Open cube.html in Google Chrome.
 
