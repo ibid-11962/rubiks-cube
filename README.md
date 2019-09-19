@@ -4,6 +4,10 @@ A mouse-controlled Rubik's Cube implemented with WebGL/JS.
 
 [See it live here.](https://ibid-11962.github.io/rubiks-cube/cube.html)
 
+This was created in Spring 2019.
+
+The matrix librarires used are [from here](https://github.com/esangel/WebGL/tree/master/Common) and under the MIT License. 
+
 # Compatibility
 
 This program is designed to be run on Google Chrome, though it may be compatible on other browsers.
