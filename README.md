@@ -29,9 +29,9 @@ Left click and drag along the pane you wish to rotate. Make sure that your mouse
 
 **Rotating the entire cube:**
 
-**Right click and drag on the cube.**
+Right click and drag on the cube.
 
-Changing the animation speed: 
+**Changing the animation speed:** 
 
 Move the slider. All the way to the right will result in no animations. Note that this only affects rotating panes.
 
